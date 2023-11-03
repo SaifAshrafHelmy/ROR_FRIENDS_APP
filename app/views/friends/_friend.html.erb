@@ -1,33 +1,12 @@
-<div class="card text-white bg-success " style="width: 30%;">
-  <div class="card-header">
-    Friend Information
-  </div>
+
+
+<div class="card text-center " >
+  <div class="card-header">Friend</div>
   <div class="card-body">
-    <div id="<%= dom_id friend %>">
-      <p>
-        <strong>First name:</strong>
-        <%= friend.first_name %>
-      </p>
+    <h5 class="card-title"><%= friend.first_name + ' ' + friend.last_name %></h5>
+    <p class="card-text">This is your beloved friend!.</p>
+    <%= link_to "Show this friend", friend, class:"btn btn-primary" %>
 
-      <p>
-        <strong>Last name:</strong>
-        <%= friend.last_name %>
-      </p>
-
-      <p>
-        <strong>Email:</strong>
-        <%= friend.email %>
-      </p>
-
-      <p>
-        <strong>Phone:</strong>
-        <%= friend.phone %>
-      </p>
-
-      <p>
-        <strong>Twitter:</strong>
-        <%= friend.twitter %>
-      </p>
-    </div>
   </div>
+  <div class="card-footer text-muted">Added Today by User <%= friend.user_id%> </div>
 </div>

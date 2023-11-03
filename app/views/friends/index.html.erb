@@ -1,12 +1,11 @@
 
 <h1>Friends</h1>
 
-<div id="friends">
+<div id="friends" class="row">
   <% @friends.each do |friend| %>
-    <%= render friend %>
-    <p>
-      <%= link_to "Show this friend", friend %>
-    </p>
+    <div class="col-4 mb-2">
+      <%= render friend %>
+    </div>
   <% end %>
 </div>
 
